@@ -52,7 +52,7 @@ a{
     position: fixed;
 }
 #drinks-icons {
-    background: no-repeat center center url(images/text.png);
+    background: no-repeat center center url(https://cdn.jsdelivr.net/gh/SkyAzure/sponsor-page/drinks/images/text.png);
 }
 .drinks-button>div {
     position: absolute;
@@ -134,7 +134,7 @@ li[id$="_donate"]:hover::after {
     height: 32px;
     position: absolute;
     top: calc(50% - 16px);
-    background: no-repeat center center url(images/github.svg);
+    background: no-repeat center center url(https://cdn.jsdelivr.net/gh/SkyAzure/sponsor-page/drinks/images/github.svg);
     background-size: contain;
     right: 72px;
     line-height: 600px;
@@ -150,16 +150,16 @@ li[id$="_donate"]:hover::after {
     opacity: 0.8;
 }
 #paypal_donate {
-    background-image: url(images/paypal.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/SkyAzure/sponsor-page/drinks/images/paypal.png);
 }
 #qq_donate{
-    background-image: url(images/qqpay.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/SkyAzure/sponsor-page/drinks/images/qqpay.png);
 }
 #alipay_donate{
-    background-image: url(images/alipay.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/SkyAzure/sponsor-page/drinks/images/alipay.png);
 }
 #wechat_donate{
-    background-image: url(images/wechatpay.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/SkyAzure/sponsor-page/drinks/images/wechatpay.png);
 }
 #drinks-qrcodes {
     display: none;
@@ -170,7 +170,7 @@ li[id$="_donate"]:hover::after {
     left: calc(50% - 90px);
     width: 180px;
     height: 180px;
-	background: #fff no-repeat center center url(../drink/images/WeChatQR.png);
+	background: #fff no-repeat center center url(.https://cdn.jsdelivr.net/gh/SkyAzure/sponsor-page/drink/images/WeChatQR.png);
     background-size: 160px;
     border-radius: 6px;
     cursor: pointer;
