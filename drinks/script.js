@@ -11,15 +11,15 @@ var drinks_qrcodes = $('#drinks-qrcodes');
 var drinks_qrcode = $('#drinks-qrcode');
 var isMobile = /Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent);
 
-var GithubLink  =   "https://github.com/Kaiyuan/donate-page/";
-var PayPalLink  =   "https://www.paypal.me/KaiyuanXie";
+var GithubLink  =   "https://github.com/SkyAzure/sponsor-page/";
+var PayPalLink  =   "https://paypal.me/SkyAzure86";
 $('#paypal-donate>a').href = PayPalLink;
 $('#github-box>a').href = GithubLink;
 var qrcodes = {
-    'btc_donate'	:	'../simple/images/BTCQR.png',	// 二维码路径
-    'alipay_donate'	:	'../simple/images/AliPayQR.png',	// 支付宝二维码
-    'alipay_donate_link'   :   'https://qr.alipay.com/3272611934645308',   // 支付宝二维码上的链接，必须换成自己的连接！！！
-    'wechat_donate'	:	'../simple/images/WeChanSQ.png'
+    'qq_donate'	:	'../drinks/images/QQ.png',	// 二维码路径
+    'alipay_donate'	:	'../drinks/images/AliPayQR.png',	// 支付宝二维码
+    //'alipay_donate_link'   :   'https://qr.alipay.com/3272611934645308',   // 支付宝二维码上的链接，必须换成自己的连接！！！
+    'wechat_donate'	:	'../drinks/images/WeChatQR.png'
 };
 
 var drinks_an = new Object();
@@ -66,15 +66,11 @@ donate_button_bg.on('click',drinks_an[1]); // 隐藏 donate box
 
 donate_button.on('click',function(){
     var thisID = $(this).attr("id");
-    if (isMobile && thisID === 'alipay_donate') {
-        // 当前网页在手机端打开跳转到支付宝 App
-        window.open(qrcodes['alipay_donate_link']);
-    } else {
-        // 当前网页在PC端打开
+    // 当前网页在PC端打开
     drinks_qrcode.css({'background-image' : 'url('+qrcodes[thisID]+')'});
     drinks_an[2]();
     // 显示二维码
-    }
+
 });
 
 drinks_qrcode.on('click',drinks_an[3]); // 隐藏二维码
