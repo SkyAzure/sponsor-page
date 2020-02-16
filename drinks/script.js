@@ -12,14 +12,14 @@ var drinks_qrcode = $('#drinks-qrcode');
 var isMobile = /Android|webOS|iPhone|iPad|BlackBerry/i.test(navigator.userAgent);
 
 var GithubLink  =   "https://github.com/SkyAzure/sponsor-page/";
-var PayPalLink  =   "https://paypal.me/SkyAzure86";
+var PayPalLink  =   "https://paypal.me/";
 $('#paypal-donate>a').href = PayPalLink;
 $('#github-box>a').href = GithubLink;
 var qrcodes = {
-    'qq_donate'	:	'https://cdn.jsdelivr.net/gh/SkyAzure/sponsor-page/drinks/images/QQ.png',	// 二维码路径
-    'alipay_donate'	:	'.https://cdn.jsdelivr.net/gh/SkyAzure/sponsor-page/drinks/images/AliPayQR.png',	// 支付宝二维码
+    'qq_donate'	:	'https://cdn.jsdelivr.net/gh/...',	// 二维码路径
+    'alipay_donate'	:	'.https://cdn.jsdelivr.net/gh/...',	// 支付宝二维码
     //'alipay_donate_link'   :   'https://qr.alipay.com/3272611934645308',   // 支付宝二维码上的链接，必须换成自己的连接！！！
-    'wechat_donate'	:	'https://cdn.jsdelivr.net/gh/SkyAzure/sponsor-page/drinks/images/WeChatQR.png'
+    'wechat_donate'	:	'https://cdn.jsdelivr.net/gh/...'
 };
 
 var drinks_an = new Object();
